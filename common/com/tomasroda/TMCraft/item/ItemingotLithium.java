@@ -3,9 +3,9 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
 import net.minecraft.item.Item;
-public class ingotLithium extends Item {
+public class ItemingotLithium extends Item {
     
-    public ingotLithium(int id){
+    public ItemingotLithium(int id){
         super(id);
         setMaxStackSize(64);
         setCreativeTab(CreativeTabs.tabMaterials);
@@ -16,7 +16,7 @@ public class ingotLithium extends Item {
     
     public void registerIcons(IconRegister ingotLithium)
     {
-             itemIcon = ingotLithium.registerIcon("TMCraft:ingotLithium.png");
+             itemIcon = ingotLithium.registerIcon("Resources:ingotLithium");
     }
 
 }

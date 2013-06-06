@@ -14,7 +14,7 @@ public class ModItems {
     
     public static void init() {
         
-    ingotLithium = new ingotLithium(ItemIds.ingotLithium).setUnlocalizedName("ingotLithium");
+    ingotLithium = new ItemingotLithium(ItemIds.ingotLithium).setUnlocalizedName("ingotLithium");
     LanguageRegistry.addName(ingotLithium, "Lithium Ingot");    
         
     }
