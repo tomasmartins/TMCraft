@@ -1,0 +1,20 @@
+[
+{
+  "modid": "TMCraft",
+  "name": "TMCraft",
+  "description": "WIP",
+  "version": "0.0.0",
+  "url": "tomasroda.info",
+  "updateUrl": "",
+  "authorList": [
+    "t_martins"
+  ],
+  "credits": "WIP",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
