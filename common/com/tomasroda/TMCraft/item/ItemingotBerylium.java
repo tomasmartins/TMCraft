@@ -3,20 +3,20 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
 import net.minecraft.item.Item;
-public class ItemingotLithium extends Item {
+public class ItemingotBerylium extends Item {
     
-    public ItemingotLithium(int id){
+    public ItemingotBerylium(int id){
         super(id);
         setMaxStackSize(64);
         setCreativeTab(CreativeTabs.tabMaterials);
-        setUnlocalizedName("ingotLithium");
+        setUnlocalizedName("ingotBerylium");
         
     } 
 
     
     public void registerIcons(IconRegister ingotLithium)
     {
-             itemIcon = ingotLithium.registerIcon("TMCraft:ingotLithium");
+             itemIcon = ingotLithium.registerIcon("TMCraft:ingotBeryllium");
     }
 
 }

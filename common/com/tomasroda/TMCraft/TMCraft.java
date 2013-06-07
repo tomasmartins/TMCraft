@@ -1,4 +1,7 @@
 package com.tomasroda.TMCraft;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
+
 import com.tomasroda.TMCraft.item.ModItems;
 import com.tomasroda.TMCraft.core.proxy.CommonProxy;
 import com.tomasroda.TMCraft.lib.Reference;
@@ -33,9 +36,9 @@ public class TMCraft {
 
     @Init
     public void load(FMLInitializationEvent event) {
-          proxy.registerRenderers();
-      
+          proxy.registerRenderers(); 
     }
+   
 
     @PostInit
     public void postInit(FMLPostInitializationEvent event) {
