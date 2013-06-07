@@ -1,8 +1,6 @@
 package com.tomasroda.TMCraft;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
-
 import com.tomasroda.TMCraft.item.ModItems;
+import com.tomasroda.TMCraft.block.ModBlocks;
 import com.tomasroda.TMCraft.core.proxy.CommonProxy;
 import com.tomasroda.TMCraft.lib.Reference;
 import cpw.mods.fml.common.Mod;
@@ -32,11 +30,13 @@ public class TMCraft {
     public void preInit(FMLPreInitializationEvent event) {
         // Stub Method
         ModItems.init();
+        ModBlocks.init();
     }
 
     @Init
     public void load(FMLInitializationEvent event) {
-          proxy.registerRenderers(); 
+       proxy.addNames();
+       
     }
    
 

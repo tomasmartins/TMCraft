@@ -1,23 +1,23 @@
 package com.tomasroda.TMCraft.item;
 
-
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-public class ItemingotLithium extends Item {
+
+public class ItemgemMorganite extends Item {
     
-    public ItemingotLithium(int id){
+    public ItemgemMorganite(int id){
         super(id);
         setMaxStackSize(64);
         setCreativeTab(CreativeTabs.tabMaterials);
-        setUnlocalizedName("ingotLithium");
+        setUnlocalizedName("gemMorganite");
         
     } 
     
     
-    public void registerIcons(IconRegister ingotLithium)
+    public void registerIcons(IconRegister gemMorganite)
     {
-             itemIcon = ingotLithium.registerIcon("TMCraft:ingotLithium");
+             itemIcon = gemMorganite.registerIcon("TMCraft:gemMorganite");
     }
 
 }
