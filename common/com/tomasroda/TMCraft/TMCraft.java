@@ -1,6 +1,7 @@
 package com.tomasroda.TMCraft;
 import com.tomasroda.TMCraft.item.ModItems;
 import com.tomasroda.TMCraft.block.ModBlocks;
+import com.tomasroda.TMCraft.core.handlers.WorldGenerator;
 import com.tomasroda.TMCraft.core.proxy.CommonProxy;
 import com.tomasroda.TMCraft.lib.Reference;
 import cpw.mods.fml.common.Mod;
@@ -13,6 +14,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
@@ -36,6 +38,7 @@ public class TMCraft {
     @Init
     public void load(FMLInitializationEvent event) {
        proxy.addNames();
+       GameRegistry.registerWorldGenerator(new WorldGenerator());
        
     }
    
