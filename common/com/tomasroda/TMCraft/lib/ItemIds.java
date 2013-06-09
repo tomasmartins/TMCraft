@@ -9,6 +9,8 @@ public class ItemIds {
     public static int gemGoldenberyl = 5004;
     public static int gemAquamarine = 5005;
     public static int gemRedberyl = 5006;
+    public static int capacitor10F = 5007;
+    
 
 
 }

@@ -1,6 +1,6 @@
 package com.tomasroda.TMCraft.block;
-
 import com.tomasroda.TMCraft.lib.BlockIds;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.block.Block;
@@ -14,8 +14,10 @@ public class ModBlocks {
     public final static Block oreAquamarine  = new BlockoreAquamarine(BlockIds.oreAquamarine) ;
     public final static Block oreMorganite  = new BlockoreMorganite(BlockIds.oreMorganite) ;
     public final static Block oreGoldenberyl  = new BlockoreGoldenberyl(BlockIds.oreGoldenberyl) ;
-    
+  
     public static void init() {
+        
+        
     LanguageRegistry.addName(oreMorganite, "Morganite Ore");
     MinecraftForge.setBlockHarvestLevel(oreMorganite, "pickaxe", 2);
     GameRegistry.registerBlock(oreMorganite, "oreMorganite");
@@ -31,6 +33,10 @@ public class ModBlocks {
     LanguageRegistry.addName(oreGoldenberyl, "Goldenberyl Ore");
     MinecraftForge.setBlockHarvestLevel(oreGoldenberyl, "pickaxe", 2);
     GameRegistry.registerBlock(oreGoldenberyl, "oreGoldenberyl");
+    
+  
+    
+  
     }  
     
     public static void oreRegistration()
