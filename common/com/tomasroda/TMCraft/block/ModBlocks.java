@@ -14,9 +14,18 @@ public class ModBlocks {
     public final static Block oreAquamarine  = new BlockoreAquamarine(BlockIds.oreAquamarine) ;
     public final static Block oreMorganite  = new BlockoreMorganite(BlockIds.oreMorganite) ;
     public final static Block oreGoldenberyl  = new BlockoreGoldenberyl(BlockIds.oreGoldenberyl) ;
+    public final static Block oreCopper  = new BlockoreCopper(BlockIds.oreCopper) ;
+    public final static Block oreTin  = new BlockoreTin (BlockIds.oreTin ) ;
+    
   
     public static void init() {
+    LanguageRegistry.addName(oreTin, "Tin Ore");
+    MinecraftForge.setBlockHarvestLevel(oreTin, "pickaxe", 2); 
+    GameRegistry.registerBlock(oreTin, "oreTin");    
         
+    LanguageRegistry.addName(oreCopper, "Copper Ore");
+    MinecraftForge.setBlockHarvestLevel(oreCopper, "pickaxe", 1);
+    GameRegistry.registerBlock(oreCopper, "oreCopper");    
         
     LanguageRegistry.addName(oreMorganite, "Morganite Ore");
     MinecraftForge.setBlockHarvestLevel(oreMorganite, "pickaxe", 2);
@@ -45,6 +54,8 @@ public class ModBlocks {
             OreDictionary.registerOre("oreAquamarine", new ItemStack(oreAquamarine));
             OreDictionary.registerOre("oreMorganite", new ItemStack(oreMorganite));
             OreDictionary.registerOre("oreGoldenberyl", new ItemStack(oreGoldenberyl));
+            OreDictionary.registerOre("oreCopper", new ItemStack(oreCopper));
+            OreDictionary.registerOre("oreTin", new ItemStack(oreTin));
           
     }
 

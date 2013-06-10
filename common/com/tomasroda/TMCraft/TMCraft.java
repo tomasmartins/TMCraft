@@ -1,5 +1,10 @@
 package com.tomasroda.TMCraft;
 
+/**
+ * @author Tomás Martins
+ */
+import universalelectricity.core.UniversalElectricity;
+
 import com.tomasroda.TMCraft.block.ModBlocks;
 import com.tomasroda.TMCraft.core.handlers.WorldGenerator;
 import com.tomasroda.TMCraft.core.proxy.CommonProxy;
@@ -42,16 +47,17 @@ public class TMCraft {
 
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
-        // Stub Method
         ModItems.init();
         ModBlocks.init();
+        ModItems.oreRegistration();
+        ModBlocks.oreRegistration();
 
     }
 
     @Init
     public void init(FMLInitializationEvent event) {
-
         GameRegistry.registerWorldGenerator(new WorldGenerator());
+        UniversalElectricity.isNetworkActive = true;
 
     }
 

@@ -1,8 +1,8 @@
 package com.tomasroda.TMCraft.item;
 
-
-
-
+/**
+ * @author Tomás Martins
+ */
 import universalelectricity.core.item.ItemElectric;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -19,10 +19,11 @@ public class Itemcapacitor10F extends ItemElectric
         this.setCreativeTab(CreativeTabs.tabRedstone);
     }
 
+    @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister ingotLithium)
     {
-            itemIcon = ingotLithium.registerIcon("TMCraft:Itemcapacitor10F");
+            itemIcon = ingotLithium.registerIcon("TMCraft:capacitor10F");
     }
 
     @Override
@@ -34,5 +35,15 @@ public class Itemcapacitor10F extends ItemElectric
     public double getVoltage(ItemStack itemStack)
     {
         return 120;
+ 
     }
+    
+    @Override
+    public double getTransferRate(ItemStack itemStack){
+        
+        
+        return 9000;
+
+    }
+    
 }

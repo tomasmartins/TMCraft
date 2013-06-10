@@ -14,6 +14,7 @@ public class ItemingotBerylium extends Item {
     } 
 
     
+    @Override
     public void registerIcons(IconRegister ingotLithium)
     {
              itemIcon = ingotLithium.registerIcon("TMCraft:ingotBeryllium");
