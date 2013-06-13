@@ -1,21 +1,18 @@
 package com.tomasroda.TMCraft.item;
 
-/**
- * @author Tomás Martins
- */
-import universalelectricity.core.item.ItemElectric;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import universalelectricity.core.item.ItemElectric;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
-public class Itemcapacitor10F extends ItemElectric
+public class ItembatteryLi extends ItemElectric
 {
-    public Itemcapacitor10F(int id)
+    public ItembatteryLi(int id)
     {
         super(id);
-        this.setUnlocalizedName("capacitor10F");
+        this.setUnlocalizedName("batteryLi");
         this.setCreativeTab(CreativeTabs.tabRedstone);
     }
 
@@ -23,27 +20,29 @@ public class Itemcapacitor10F extends ItemElectric
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister ingotLithium)
     {
-            itemIcon = ingotLithium.registerIcon("TMCraft:capacitor10F");
+            itemIcon = ingotLithium.registerIcon("TMCraft:batteryLi");
     }
 
     @Override
     public double getMaxJoules(ItemStack itemStack)
     {
-        return 72000;
+        return 3000000;
     }
     @Override
     public double getVoltage(ItemStack itemStack)
     {
-        return 120;
+        return 3.2;
  
     }
+    
     
     @Override
     public double getTransferRate(ItemStack itemStack){
         
         
-        return 9000;
+        return 100000;
 
     }
+    
     
 }

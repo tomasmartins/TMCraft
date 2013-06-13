@@ -24,11 +24,12 @@ public class ModItems {
     public static Item gemMorgaite;
     public static Item gemRedberyl;
     public static ItemElectric cap10F;
+    public static ItemElectric battLi;
     public static Item ingotCopper;
     public static Item ingotTin;
 
     public static void init() {
-
+        battLi = new ItembatteryLi(ItemIds.bateryLi);
         cap10F = new Itemcapacitor10F(ItemIds.capacitor10F);
         ingotBeryllium = new ItemingotBerylium(ItemIds.ingotBerylium);
         ingotLithium = new ItemingotLithium(ItemIds.ingotLithium);
@@ -39,6 +40,7 @@ public class ModItems {
         ingotCopper = new ItemingotCopper(ItemIds.ingotCopper);
         ingotTin = new ItemingotTin(ItemIds.ingotTin);
         LanguageRegistry.addName(ingotLithium, "Lithium Ingot");
+        LanguageRegistry.addName(battLi, "Lithium Battery");
         LanguageRegistry.addName(cap10F, "Capacitor 10Farads");
         LanguageRegistry.addName(ingotBeryllium, "Beryllium Ingot");
         LanguageRegistry.addName(gemMorganite, "Morganite");
@@ -50,6 +52,9 @@ public class ModItems {
 
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(cap10F),
                 new Object[] { "ipi", 'p', Item.paper, 'i', Item.ingotIron }));
+        
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(battLi),
+                new Object[] { "ipi", 'p', Item.paper, 'i',"ingtoLithium" }));
 
     }
 

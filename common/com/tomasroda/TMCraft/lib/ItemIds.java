@@ -17,8 +17,6 @@ public class ItemIds {
     
     /* Electric items*/
     public static int capacitor10F =   DEFAULT + 9;
-
+    public static int bateryLi =       DEFAULT + 10;
     
-
-
 }
